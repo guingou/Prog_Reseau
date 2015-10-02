@@ -1,4 +1,4 @@
-# Install script for directory: /home/steve/RE216/projet1/src/jalon01
+# Install script for directory: /home/steve/RE216/projet_reseau/src/jalon01
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -120,9 +120,11 @@ int main(int argc,char** argv)
 
         memset(&buffer, 0, (int) 256);
         read(sockfd, buffer, (int) 256);
-        fprintf(stderr, "SERVER --> %s", buffer);
-        if(strcmp(buffer, "Connexion terminée\n") == 0)
+        fprintf(stdout, "[SERVER] : %s", buffer);
+        if(strcmp(buffer, "You will be terminated\n") == 0){
+            fprintf(stdout, "Connection terminated\n\n");
             break;
+        }
     }
 
     close(sockfd);
