@@ -98,7 +98,7 @@ int main(int argc,char** argv)
     struct addrinfo ** res = &add;
     int sockfd;
 
-	get_addr_info(argv[1], argv[2], res);
+	get_addr_info(argv[2], argv[1], res);
 	add = *res;
 	addr= *add;
 
